@@ -1,0 +1,689 @@
+html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0%;
+  }
+  
+  h1 {
+    color: black;
+    font-family: cursive;
+    font-size: 3.75rem;
+  }
+  
+  h2, h3, h4 {
+    color: black;
+    font-family: cursive;
+  }
+  
+  .article1 h2, h3 {
+      color: black;
+      font-family: cursive;
+      border-bottom: 2px solid rgb(114, 189, 250);
+      width: 55%;
+  }
+
+  .article h4 {
+    text-align: center;
+  
+  }
+
+
+  .glacier {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+
+  /*font family 
+  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  */
+  
+  footer {
+    background-color:rgb(114, 189, 250);
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    margin-top: 50px;
+    height: 5rem;
+    width: 100%;
+  }
+  
+  footer .container {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  footer .copyright {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  
+  footer .location {
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: rgb(0, 0, 0);
+    padding-right: 2rem;
+  }
+    
+/* navigation */
+  .navigation {
+    position: sticky;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: rgb(114, 189, 250);
+      height: 2.75rem;
+      padding: 1em 0;
+      width: 100%;
+      z-index: 100;
+    }
+    
+    a {
+      color: black;
+      font-family: 'Edu TAS Beginner';
+      font-size: 1.6rem;
+      /* padding: 2px; */
+    }
+    
+    a:hover {
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    li {
+      border: 1.5px solid black;
+      border-radius: 1rem;
+      width: 8rem;
+      text-align: center;
+    }
+    
+  
+    .travellogo {
+      font-family: 'Kanit', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin: 0.3rem;
+    }
+  
+    #logolink {
+      text-decoration: none;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+    
+    .menu {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin-right: 1rem;
+      padding: 0;
+      /* width: 60rem; */
+      align-items: baseline;
+    }
+    
+    .menu > li {
+      margin: 0 1rem;
+      overflow: hidden;
+    }
+    
+    .menu-button-container {
+      display: none;
+      height: 100%;
+      width: 30px;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    #menu-toggle {
+      display: none;
+    }
+    
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+      display: block;
+      background-color: rgb(0, 0, 0);
+      position: absolute;
+      height: 4px;
+      width: 30px;
+     /* transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1); */
+      border-radius: 2px;
+    }
+    
+    
+    .menu-button::before {
+      content: '';
+      margin-top: -8px;
+    }
+    
+    .menu-button::after {
+      content: '';
+      margin-top: 8px;
+    }
+    
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+      margin-top: 0px;
+      transform: rotate(405deg);
+    }
+    
+    #menu-toggle:checked + .menu-button-container .menu-button {
+      background: rgba(255, 255, 255, 0);
+    }
+    
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+      margin-top: 0px;
+      transform: rotate(-405deg);
+    }
+  
+    /* banner */
+    #banner {
+      height: 40rem;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #banner .logo h1{
+      font-family: 'Kanit', sans-serif;
+      font-size: 5rem;
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+      height: auto;
+      width: 90%;
+      color: rgb(12, 12, 12);
+      border-radius: 20px;
+      z-index: 1;
+    }
+  
+    #banner .logo{
+      width: 90%;
+      height: auto;
+    }
+    
+    .tagline h2{
+      font-family: 'Kanit', sans-serif;
+      font-size: 3.125rem;
+      color: black;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      border-top: 2px solid rgb(114, 189, 250);;
+    }
+    
+    .content {
+      position: relative;
+      margin: 0 auto;
+      height: 35rem;
+      width: 100%;
+      background-image: url('photos/Background/Milford.jpg');
+      background-size: cover;
+      background-position: center; 
+    }
+    
+    /* Trip sections */
+    #tripheader {
+      text-align: center;
+      font-weight: 600;
+      font-size: 3.5rem;
+      word-spacing: 2px;
+      position: relative;
+      border-bottom: 5px solid rgb(114, 189, 250);
+      font-family: 'Kanit', sans-serif;
+      
+    }
+    
+    /* Article */
+    .thumbnail {
+      background-image: url("photos/Mt. Cook/Aoraki.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 80%;
+      height: 20rem;
+      margin: 0 auto;
+    }
+  
+    .introduction {
+      margin: 0 auto;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+  
+    .article h2{
+      position: relative;
+      width: 80%;
+      left: 10%;
+    }
+
+  .article1 {
+    width: 100%;
+  }
+     
+    /* Landscape Tablet */
+    @media only screen and (min-width:768px) and (max-width:1050px) and (orientation: landscape) {
+      #tripheader {
+        top: 0px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 3.5rem;
+        word-spacing: 2px;
+        position: relative;
+        border-bottom: 5px solid rgb(114, 189, 250);
+        font-family: 'Kanit', sans-serif;
+        top: 2rem;
+      }
+      
+      .caption {
+        height: 14%;
+        font-size: 1.5em;
+        color: azure;
+        background-color: rgba(9, 9, 9, 0.5);
+        margin: 5px 5px;
+        border-radius: 10px;
+      }
+    
+      .caption h6 {
+        padding: 0%;
+        margin: 1rem 2px;
+      }
+  
+      footer {
+        margin-top: 0.62rem;
+      }
+      }
+    
+   
+    /* Portratit Tablet */
+    @media only screen and (min-width: 610px) and (max-width: 767px) {
+      
+      a {
+        color: black;
+        font-family: 'Edu TAS Beginner';
+        font-size: 1.5rem;
+      }
+      
+      .menu-button-container {
+        display: flex;
+        margin-right: 0.5rem;
+     }
+  
+     li {
+      border-radius: 0;
+      text-align: center;
+    }
+   
+     .menu {
+       position: absolute;
+       top: 0;
+       margin-top: 70px;
+       left: 0;
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+     }
+   
+     #menu-toggle ~ .menu li {
+       height: 0;
+       margin: 0;
+       padding: 0;
+       border: 0;
+         /* transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); */
+     }
+   
+     #menu-toggle:checked ~ .menu li {
+       border: 1px solid rgb(255, 255, 255);
+       height: 2.5em;
+       padding: 0.5em 0;
+       /*transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);*/
+      }
+   
+     .menu > li {
+       display: flex;
+       justify-content: center;
+       margin: 0;
+       padding: 0.5em 0;
+       width: 100%;
+       background-color: rgb(114, 189, 250);
+     }
+       
+     .menu > li:not(:last-child) {
+       border-bottom: 1px solid #444;
+     }
+   
+      .explore {
+        width: 70%;
+        height: 600px;
+        min-height: 500px;
+      }
+      
+      #tripheader {
+        text-align: center;
+        font-weight: 600;
+        font-size: 3.5rem;
+        word-spacing: 2px;
+        position: relative;
+        border-bottom: 5px solid rgb(114, 189, 250);
+        font-family: 'Kanit', sans-serif;
+        top: 2rem;
+      }
+      
+      .caption {
+        height: 14%;
+        font-size: 1.5em;
+        color: azure;
+        background-color: rgba(9, 9, 9, 0.5);
+        margin: 5px 5px;
+        border-radius: 10px;
+      }
+    
+      .caption h6 {
+        padding: 0%;
+        margin: 1rem 2px;
+      }
+        
+      footer {
+        margin-top: 0.62rem;
+      }
+  
+    }
+  
+    @media only screen and (min-width: 500px) and (max-width: 609px) and (orientation: portrait) {
+      nav {
+       width: 30%;
+      }
+  
+      #banner .logo h1{
+        font-size: 3rem;
+      }
+  
+      .tagline h2 {
+        font-size: 2.5rem;
+      }
+  
+      #tripheader {
+        top: 2rem;
+      }
+      
+      .gridcontainer {
+        display: grid;
+        grid-template: repeat(5, 210px) / repeat(6, 1fr);
+        width: 95%;
+        height: 100%;
+      }
+  
+      .caption {
+        height: 14%;
+        font-size: 1.5em;
+        color: azure;
+        background-color: rgba(9, 9, 9, 0.5);
+        margin: 5px 5px;
+        border-radius: 10px;
+      }
+    
+      .caption h6 {
+        padding: 0%;
+        margin: 6px 2px;
+      }
+      
+      li {
+        border-radius: 0;
+        text-align: center;
+      }
+  
+      .menu-button-container {
+        display: flex;
+        margin-right: 0.5rem;
+     }
+   
+     .menu {
+       position: absolute;
+       top: 0;
+       margin-top: 70px;
+       left: 0;
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+     }
+   
+     #menu-toggle ~ .menu li {
+       height: 0;
+       margin: 0;
+       padding: 0;
+       border: 0;
+         /* transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); */
+     }
+   
+     #menu-toggle:checked ~ .menu li {
+       border: 1px solid rgb(255, 255, 255);
+       height: 2.5em;
+       padding: 0.5em 0;
+       /*transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);*/
+      }
+   
+     .menu > li {
+       display: flex;
+       justify-content: center;
+       margin: 0;
+       padding: 0.5em 0;
+       width: 100%;
+       background-color: rgb(114, 189, 250);
+     }
+       
+     .menu > li:not(:last-child) {
+       border-bottom: 1px solid #444;
+     }
+   
+     footer .container {
+       color: rgb(0, 0, 0);
+       height: 6rem;
+       display: flex;
+       width: 100%;
+       margin: 0 auto;
+       flex-direction: column-reverse;
+       align-items: center;
+     }
+   
+     footer .copyright {
+       flex-grow: 1;
+       font-size: 0.9rem;
+       padding: 5px;
+       margin-top: 1rem;
+     }
+   
+     footer .location {
+       font-size: 0.9rem;
+       margin-top: 0.5rem;
+     }
+       
+     footer a {
+       color: rgb(0, 0, 0);
+       padding: 0;
+     }
+   
+     footer {
+       background-color:rgb(114, 189, 250);
+       font-family: 'Roboto', sans-serif;
+       position: sticky;
+       margin-top: 50px;
+       height: 6rem;
+       width: 100%;
+     }
+    }
+  
+    @media only screen and (min-width: 200px) and (max-width: 499px) and (orientation: portrait) {
+      #banner .logo h1{
+        font-size: 3rem;
+      }
+  
+      .tagline h2 {
+        font-size: 2.5rem;
+      }
+  
+      nav {
+       width: 30%;
+      }
+  
+      #banner {
+        height: 33rem;
+      }
+  
+      .content {
+        height: 20rem;
+      }
+  
+      
+      
+      #tripheader {
+        /* top: 2rem; */
+        width: 100;
+        font-size: 2rem;
+      }
+      
+      .gridheader h1 {
+        font-size: 3rem;
+      }
+  
+      .gridcontainer {
+        display: grid;
+        grid-template: repeat(5, 210px) / repeat(6, 1fr);
+        width: 95%;
+        height: 100%;
+      }
+      
+      .caption {
+        height: 14%;
+        font-size: 1rem;
+        color: azure;
+        background-color: rgba(9, 9, 9, 0.5);
+        margin: 5px 5px;
+        border-radius: 10px;
+      }
+    
+      .caption h6 {
+        padding: 0%;
+        margin: 9px 2px;
+      }
+  
+      .thumbnail {
+        height: 8rem;
+      }
+  
+      .button {
+        min-width: 11rem;
+        width: 11rem;
+      }
+  
+      li {
+        border-radius: 0;
+        text-align: center;
+      }
+      
+      .menu-button-container {
+        display: flex;
+        margin-right: 0.5rem;
+     }
+   
+     .menu {
+       position: absolute;
+       top: 0;
+       margin-top: 70px;
+       left: 0;
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+     }
+   
+     #menu-toggle ~ .menu li {
+       height: 0;
+       margin: 0;
+       padding: 0;
+       border: 0;
+         /* transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); */
+     }
+   
+     #menu-toggle:checked ~ .menu li {
+       border: 1px solid rgb(255, 255, 255);
+       height: 2.5em;
+       padding: 0.5em 0;
+       /*transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);*/
+      }
+   
+     .menu > li {
+       display: flex;
+       justify-content: center;
+       margin: 0;
+       padding: 0.5em 0;
+       width: 100%;
+       background-color: rgb(114, 189, 250);
+     }
+       
+     .menu > li:not(:last-child) {
+       border-bottom: 1px solid #444;
+     }
+   
+     footer .container {
+       color: rgb(0, 0, 0);
+       height: 6rem;
+       display: flex;
+       width: 100%;
+       margin: 0 auto;
+       flex-direction: column-reverse;
+       align-items: center;
+     }
+   
+     footer .copyright {
+       flex-grow: 1;
+       font-size: 0.9rem;
+       padding: 5px;
+       margin-top: 1rem;
+     }
+   
+     footer .location {
+       font-size: 0.9rem;
+       margin-top: 0.5rem;
+     }
+       
+     footer a {
+       color: rgb(0, 0, 0);
+       padding: 0;
+     }
+   
+     footer {
+       background-color:rgb(114, 189, 250);
+       font-family: 'Roboto', sans-serif;
+       position: sticky;
+       margin-top: 50px;
+       height: 6rem;
+       width: 100%;
+     }
+  }
